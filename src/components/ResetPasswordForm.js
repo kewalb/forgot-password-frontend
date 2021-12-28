@@ -23,7 +23,7 @@ function ResetPasswordForm() {
       alert("enter matching password again");
     } else {
       const data = { password: newPassword, token };
-      fetch("http://localhost:9000/user/new-password", {
+      fetch("https://forgot-password-backend.herokuapp.com/user/new-password", {
         method: "post",
         body: JSON.stringify(data),
         mode: "cors",

@@ -11,7 +11,7 @@ function ResetPassword() {
       alert("enter your email");
     } else {
       const data = { email };
-      fetch("http://localhost:9000/user/forgot-password", {
+      fetch("https://forgot-password-backend.herokuapp.com/user/forgot-password", {
         method: "post",
         body: JSON.stringify(data),
         mode: "cors",

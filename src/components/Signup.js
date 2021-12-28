@@ -17,7 +17,7 @@ function Signup() {
             password
         }
         console.log(data)
-        fetch("http://localhost:9000/user/signup", {
+        fetch("https://forgot-password-backend.herokuapp.com/user/signup", {
             method: "post",
             body: JSON.stringify(data),
             mode: 'cors',
